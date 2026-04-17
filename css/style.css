@@ -6225,7 +6225,7 @@ textarea.textarea-lg {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 10px;
-	background-image: url(../images/quote-jean.png);
+	background-image: url(../images/quote-jean-2.png);
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 }
@@ -20323,17 +20323,30 @@ disabled look for disabled choices in the results dropdown
 .footer {
   background-color: #312782;
   color: #fff;
-  padding: 10px 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   font-size: 14px;
 }
 
-.footer-left {
-  text-align: left;
-}
-
-.footer-right {
-  text-align: right;
+.footer-rights {
+  font-size: 13px;
+  opacity: 0.8;
 }
