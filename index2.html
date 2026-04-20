@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protocolo de Acceso Vascular</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+  <header>
+    <h1>Selección de Acceso Venoso</h1>
+    <p>Guía Clínica de Seguridad del Paciente</p>
+  </header>
+
+  <nav class="breadcrumb-container">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumb-item">
+          <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        </li>
+        <li class="breadcrumb-item active">Selección de Acceso Venoso</li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="card" style="margin-bottom: 2rem;">
+      <h2><i class="fas fa-project-diagram"></i> Algoritmo de Decisión (Adultos)</h2>
+      <p>Evalúa propiedades del medicamento, duración de la terapia y anatomía vascular.</p>
+      
+      <div class="image-container">
+        <img src="images/index2/AccesoVenosoPerifericoAdulto.png" alt="Algoritmo de criterios de acceso vascular">
+      </div>
+
+      <div class="grid">
+        <div class="status-box success">
+          <strong>DAVP (Periférico)</strong>
+          <ul>
+            <li>Osmolaridad < 500 mOsm/L</li>
+            <li>pH entre 5 - 9</li>
+            <li>No vesicante / No irritante</li>
+          </ul>
+        </div>
+        <div class="status-box danger">
+          <strong>DAVC (Central)</strong>
+          <ul>
+            <li>Osmolaridad > 500 mOsm/L</li>
+            <li>pH < 5 ó > 9</li>
+            <li>Vesicante, Irritante, Vasoactiva</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h2><i class="fas fa-check-circle"></i> Venas Indicadas</h2>
+        <div class="image-container-venas">
+          <img src="images/index2/VenasIndicadas.png" alt="Mapa de venas del brazo">
+        </div>
+        <ul style="font-size: 0.9rem;">
+          <li>Miembros superiores (antebrazo de preferencia)</li>
+          <li>Zonas distales por encima de canalizaciones previas</li>
+          <li>Buen diámetro y llenado capilar</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2><i class="fas fa-times-circle"></i> Venas a Evitar</h2>
+        <div class="image-container-venas">
+          <img src="images/index2/VenasNoIndicadas.png" alt="Mapa de venas del brazo">
+        </div>
+        <ul style="font-size: 0.9rem; color: #c53030;">
+          <li>Miembros inferiores en adultos</li>
+          <li>Zonas de flexión articular</li>
+          <li>Piel deteriorada o infectada</li>
+          <li>Extremidad con FAV o hemiparesia</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="card">
+      <h2><i class="fas fa-baby"></i> Protocolo Pediátrico (Score DIVA)</h2>
+      <p>Herramienta para identificar accesos venosos dificultosos. Un puntaje <strong>> 4</strong> sugiere uso de personal experimentado y ecografía.</p>
+      
+      <div class="image-container">
+        <img src="images/index2/AccesoVenosoPediatria.png" alt="Algoritmo DIVA pediátrico">
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Factores de Riesgo</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Obesidad</td>
+            <td>Edema de extremidades</td>
+          </tr>
+          <tr>
+            <td>Malformaciones Osteomusculares</td>
+            <td>Deshidratación moderada a grave</td>
+          </tr>
+          <tr>
+            <td>Tratamiento con quimioterapia</td>
+            <td>Historia de acceso venoso dificil y/o múltiples punciones</td>
+          </tr>
+
+          <tr>
+            <td>Diabetes Mellitus <br> Pacientes de diálisis</td>
+            <td>Ansiedad del paciente y/o padres refieren que el niño es poco probable que coopere</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" style="margin-top: 2rem;">
+      <h2><i class="fas fa-vial"></i> Flujos y Diámetros</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Vena</th>
+            <th>Diámetro aprox.</th>
+            <th>Velocidad de Flujo</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr><td>Metacarpianas</td><td>2-5 mm</td><td>10 ml/min</td></tr>
+            <tr><td>Antebrazo</td><td>6 mm</td><td>20 ml/min</td></tr>
+            <tr><td>Basílica</td><td>8 mm</td><td>90-150 ml/min</td></tr>
+            <tr><td>Axilar</td><td>16 mm</td><td>150-350 ml/min</td></tr>
+            <tr><td>Vena Subclavia</td><td>19 mm</td><td>350-1500 ml/min</td></tr>
+            <tr><td>Cava Superior</td><td>20 mm</td><td>2000 ml/min</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" style="margin-top: 2rem;">
+      <h2><i class="fas fa-vial"></i> Cálculo del DIVA Score</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Variable</th>
+            <th>Opciones</th>
+            <th>Puntos</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>Vena visible después de torniquete</td>
+              <td>Visible <br> No visible</td>
+              <td><span class="badge">0 <br> 2</span></td>
+            </tr>
+            <tr>
+              <td>Vena palpable después de torniquete</td>
+              <td>Palpable <br> No palpable</td>
+              <td><span class="badge">0 <br> 2</span></td>
+            </tr>
+            <tr>
+              <td>Edad</td>
+              <td> Mayor o igual a 3 años <br> 1 - 2 años <br> Menor a 1 año</td>
+              <td><span class="badge">0 <br> 1 <br> 3</span></td>
+            </tr>
+            <tr>
+              <td>Antecedentes de prematurez edad <br> gestacional menor a 38 semanas</td>
+              <td>No <br> Si</td>
+              <td><span class="badge">0 <br> 3</span></td>
+            </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

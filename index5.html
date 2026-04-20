@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complicaciones y Signos de Alarma</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+  <header>
+    <h1>Complicaciones y Signos de Alarma</h1>
+    <p>Identificación Temprana y Escala Maddox</p>
+  </header>
+
+  <nav class="breadcrumb-container">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li class="breadcrumb-item active">Complicaciones</li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="card" style="margin-bottom: 2rem;">
+      <h2><i class="fas fa-microscope"></i> Clasificación de Flebitis</h2>
+      <div class="step-grid">
+        <div class="status-box" style="border-top: 4px solid var(--primary-blue);">
+          <strong>Química:</strong> Por pH extremo (<5 o >9) u osmolaridad >500 mOsm/L.
+        </div>
+        <div class="status-box" style="border-top: 4px solid var(--primary-blue);">
+          <strong>Mecánica:</strong> Por inserción en flexión o calibre inadecuado (primeras 12h).
+        </div>
+        <div class="status-box" style="border-top: 4px solid var(--accent-red);">
+          <strong>Infecciosa:</strong> Por falla en técnica aséptica (~72h post-implante).
+        </div>
+        <div class="status-box" style="border-top: 4px solid #f59e0b;">
+          <strong>Post-infusión:</strong> Entre 48 a 96h tras el retiro del catéter.
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-bottom: 2rem;">
+      <h2><i class="fas fa-scale-balanced"></i> Escala de Valoración Maddox</h2>
+      <p style="font-size: 0.9rem; margin-bottom: 1rem;">Aplicación obligatoria en cada turno para determinar la conducta a seguir.</p>
+      
+      <div class="table-responsive">
+        <table class="maddox-table">
+          <thead>
+            <tr>
+              <th>Puntaje</th>
+              <th>Signos y Síntomas</th>
+              <th>Valoración</th>
+              <th>Conducta Clínica</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="level-0">
+              <td><strong>0</strong></td>
+              <td>Sin dolor, eritema ni edema.</td>
+              <td>Sin signos</td>
+              <td>Observar punto de inserción.</td>
+            </tr>
+            <tr class="level-1">
+              <td><strong>1</strong></td>
+              <td>Dolor local, sin eritema ni cordón.</td>
+              <td>Posible inicio</td>
+              <td>Observar punto de inserción.</td>
+            </tr>
+            <tr class="level-warning">
+              <td><strong>2</strong></td>
+              <td>Dolor con eritema y/o edema local.</td>
+              <td>Inicio flebitis</td>
+              <td><strong>Retiro del catéter</strong>.</td>
+            </tr>
+            <tr class="level-danger">
+              <td><strong>3-4</strong></td>
+              <td>Endurecimiento o cordón palpable >6cm o purulencia.</td>
+              <td>Etapa avanzada</td>
+              <td>Retiro y valorar tratamiento.</td>
+            </tr>
+            <tr class="level-critical">
+              <td><strong>5</strong></td>
+              <td>Trombosis franca con detención de perfusión.</td>
+              <td>Tromboflebitis</td>
+              <td>Retiro e inicio de tratamiento.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h2><i class="fas fa-biohazard"></i> Complicaciones Críticas</h2>
+        <div class="alert-grid">
+          <div class="alert-item">
+            <strong>Extravasación:</strong> Salida de líquido vesicante; riesgo de necrosis.
+          </div>
+          <div class="alert-item">
+            <strong>Lesión Nerviosa:</strong> Parestesia o dolor irradiado. Retirar de inmediato.
+          </div>
+          <div class="alert-item">
+            <strong>Embolia Aérea:</strong> Disnea y dolor torácico. Posición Trendelenburg.
+          </div>
+          <div class="alert-item">
+            <strong>Bacteriemia:</strong> Fiebre o escalofríos tras la infusión. Hemocultivos.
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2><i class="fas fa-triangle-exclamation"></i> Infiltración vs Trombosis</h2>
+        <div class="status-box" style="background: #eff6ff; margin-bottom: 10px;">
+          <strong>Infiltración:</strong> Edema y piel fría por salida de líquido no vesicante.
+        </div>
+        <div class="status-box" style="background: #fff1f2;">
+          <strong>Trombosis Venosa:</strong> Dolor, edema y eritema persistente. Requiere evaluación médica urgente.
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
