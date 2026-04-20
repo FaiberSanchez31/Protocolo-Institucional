@@ -19,37 +19,53 @@
         <li class="breadcrumb-item">
           <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
         </li>
-        <li class="breadcrumb-item active">Selección de Acceso Venoso</li>
+        <li class="breadcrumb-item active"><a href="index2.html">Selección de Acceso Venoso</a></li>
+        <li class="breadcrumb-item"><a href="index3.html">Antisepsia e Inserción</a></li>
+        <li class="breadcrumb-item"><a href="index4.html">Cuidado y Mantenimiento</a></li>
+        <li class="breadcrumb-item"><a href="index5.html">Complicaciones</a></li>
+        <li class="breadcrumb-item"><a href="index6.html">Educacion al Paciente</a></li>
       </ul>
     </div>
   </nav>
 
   <div class="container">
+
     <section class="card" style="margin-bottom: 2rem;">
       <h2><i class="fas fa-project-diagram"></i> Algoritmo de Decisión (Adultos)</h2>
-      <p>Evalúa propiedades del medicamento, duración de la terapia y anatomía vascular.</p>
-      
-      <div class="image-container">
-        <img src="images/index2/AccesoVenosoPerifericoAdulto.png" alt="Algoritmo de criterios de acceso vascular">
+
+      <div class="split-container">
+        <div class="split-image-large">
+          <img src="images/index2/AccesoVenosoPerifericoAdulto.png" alt="Algoritmo de criterios de acceso vascular">
+        </div>
+
+        <div class="split-content-compact">
+          <div class="priority-box">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Sigue el algoritmo de selección del Acceso Venoso periférico en Adulto respetando sus criterios de selección de dispositivo de acceso venoso. </p>
+          </div>
+
+            <div class="table-link-box">
+              <strong>Tablas de Estabilidad y Dilución</strong>
+              <p>Consulte la tabla de dilución y estabilidad de medicamentos y la tabla de consolidado de estabilidad de medicamentos multidosis</p>
+            </div>
+        </div>
       </div>
 
       <div class="grid">
-        <div class="status-box success">
-          <strong>DAVP (Periférico)</strong>
-          <ul>
-            <li>Osmolaridad < 500 mOsm/L</li>
-            <li>pH entre 5 - 9</li>
-            <li>No vesicante / No irritante</li>
-          </ul>
-        </div>
-        <div class="status-box danger">
-          <strong>DAVC (Central)</strong>
-          <ul>
-            <li>Osmolaridad > 500 mOsm/L</li>
-            <li>pH < 5 ó > 9</li>
-            <li>Vesicante, Irritante, Vasoactiva</li>
-          </ul>
-        </div>
+          <div class="status-box success">
+              <strong>DAVP (Periférico)</strong>
+              <ul>
+                <li>Osmolaridad < 500 mOsm/L | pH 5 - 9</li>
+                <li>No vesicante / No irritante</li>
+              </ul>
+          </div>
+          <div class="status-box danger">
+              <strong>DAVC (Central)</strong>
+              <ul>
+                <li>Osmolaridad > 500 mOsm/L | pH < 5 ó > 9</li>
+                <li>Vesicante, Irritante, Vasoactiva</li>
+              </ul>
+          </div>
       </div>
     </section>
 
@@ -80,9 +96,44 @@
       </section>
     </div>
 
-    <section class="card">
-      <h2><i class="fas fa-baby"></i> Protocolo Pediátrico (Score DIVA)</h2>
-      <p>Herramienta para identificar accesos venosos dificultosos. Un puntaje <strong>> 4</strong> sugiere uso de personal experimentado y ecografía.</p>
+    <section class="card" style="margin-top: 2rem;">
+      <h2><i class="fas fa-vial"></i> Cálculo del DIVA Score</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Variable</th>
+            <th>Opciones</th>
+            <th>Puntos</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>Vena visible después de torniquete</td>
+              <td>Visible <br> No visible</td>
+              <td><span class="badge">0 <br> 2</span></td>
+            </tr>
+            <tr>
+              <td>Vena palpable después de torniquete</td>
+              <td>Palpable <br> No palpable</td>
+              <td><span class="badge">0 <br> 2</span></td>
+            </tr>
+            <tr>
+              <td>Edad</td>
+              <td> Mayor o igual a 3 años <br> 1 - 2 años <br> Menor a 1 año</td>
+              <td><span class="badge">0 <br> 1 <br> 3</span></td>
+            </tr>
+            <tr>
+              <td>Antecedentes de prematurez edad <br> gestacional menor a 38 semanas</td>
+              <td>No <br> Si</td>
+              <td><span class="badge">0 <br> 3</span></td>
+            </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" style="margin-top: 2rem;">
+      <h2><i class="fas fa-baby"></i> Score DIVA </h2>
+      <p>Herramienta para identificar accesos venosos dificultosos en pediatría y usuarios con factores de riesgo. Un puntaje <strong>> 4</strong> sugiere uso de personal experimentado y ecografía.</p>
       
       <div class="image-container">
         <img src="images/index2/AccesoVenosoPediatria.png" alt="Algoritmo DIVA pediátrico">
@@ -134,41 +185,6 @@
             <tr><td>Axilar</td><td>16 mm</td><td>150-350 ml/min</td></tr>
             <tr><td>Vena Subclavia</td><td>19 mm</td><td>350-1500 ml/min</td></tr>
             <tr><td>Cava Superior</td><td>20 mm</td><td>2000 ml/min</td></tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section class="card" style="margin-top: 2rem;">
-      <h2><i class="fas fa-vial"></i> Cálculo del DIVA Score</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Variable</th>
-            <th>Opciones</th>
-            <th>Puntos</th>
-          </tr>
-        </thead>
-        <tbody>
-            <tr>
-              <td>Vena visible después de torniquete</td>
-              <td>Visible <br> No visible</td>
-              <td><span class="badge">0 <br> 2</span></td>
-            </tr>
-            <tr>
-              <td>Vena palpable después de torniquete</td>
-              <td>Palpable <br> No palpable</td>
-              <td><span class="badge">0 <br> 2</span></td>
-            </tr>
-            <tr>
-              <td>Edad</td>
-              <td> Mayor o igual a 3 años <br> 1 - 2 años <br> Menor a 1 año</td>
-              <td><span class="badge">0 <br> 1 <br> 3</span></td>
-            </tr>
-            <tr>
-              <td>Antecedentes de prematurez edad <br> gestacional menor a 38 semanas</td>
-              <td>No <br> Si</td>
-              <td><span class="badge">0 <br> 3</span></td>
-            </tr>
         </tbody>
       </table>
     </section>

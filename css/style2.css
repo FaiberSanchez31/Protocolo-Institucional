@@ -356,3 +356,176 @@ h2 i {
 @media (max-width: 600px) {
     .alert-grid { grid-template-columns: 1fr; }
 }
+
+/* Estilo de lista de verificación (Check-list) */
+.check-list {
+    list-style: none;
+    padding: 0;
+}
+
+.check-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.check-list i {
+    color: var(--accent-green);
+    margin-top: 4px;
+}
+
+/* Stepper para Consentimiento Informado */
+.info-stepper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.step-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.step-icon {
+    background: var(--primary-blue);
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* Cajas de alerta rápida */
+.alert-box {
+    background: #fff5f5;
+    border: 1px solid #feb2b2;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #c53030;
+}
+
+.alert-box i {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* Tarjeta de Humanización (Highlight) */
+.highlight-card {
+    background: linear-gradient(to bottom right, #ffffff, #f0f7ff);
+    border-top: 5px solid #63b3ed;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.quote {
+    font-style: italic;
+    color: var(--primary-blue);
+    border-left: 3px solid var(--primary-blue);
+    padding-left: 15px;
+    margin: 20px 0 0 0;
+    font-size: 1rem;
+}
+
+/* Ajustes Responsive */
+@media (max-width: 600px) {
+    .step-item { font-size: 0.85rem; }
+    .quote { font-size: 0.9rem; }
+}
+
+/* Contenedor con prioridad a la imagen */
+.split-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.split-image-large {
+    flex: 2; /* Aumenta el tamaño relativo de la imagen */
+    max-width: 500px;
+}
+
+.split-image-large img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.split-content-compact {
+    flex: 1; /* Reduce el espacio del texto */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Caja de prioridad simplificada */
+.priority-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fffaf0;
+    border-left: 4px solid #ed8936;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.priority-box i { color: #ed8936; }
+
+/* Enlace a tabla enfático */
+.table-link-box {
+    background: var(--secondary-blue);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.table-link-box strong {
+    display: block;
+    color: var(--primary-blue);
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.table-link-box p {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.btn-emphasis {
+    display: inline-block;
+    background: var(--primary-blue);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* Ajuste responsive para mantener la legibilidad */
+@media (max-width: 850px) {
+    .split-container {
+        flex-direction: column;
+    }
+    .split-image-large {
+        max-width: 100%;
+    }
+}
