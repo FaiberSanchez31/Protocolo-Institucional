@@ -20232,7 +20232,7 @@ disabled look for disabled choices in the results dropdown
 /* Nuevos Estilos */
 .banner {
 	height: 350px;
-	background-image: url('../images/banner-enfermeria.jpg'); /* cambia la ruta */
+	background-image: url('../images/banner01.png'); /* cambia la ruta */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
