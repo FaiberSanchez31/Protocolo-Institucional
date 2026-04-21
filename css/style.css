@@ -20283,8 +20283,41 @@ disabled look for disabled choices in the results dropdown
 }
 
 .banner a:hover {
-	background: #333;
+	background: #312782;
 	color: white;
+}
+
+.btn-protocolo {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 28px;
+	background: #312782;
+	color: white;
+	text-decoration: none;
+	border-radius: 30px;
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+	transition: all 0.3s ease;
+}
+
+/* Icono */
+.btn-protocolo .icono {
+	font-size: 16px;
+}
+
+/* Hover elegante */
+.btn-protocolo:hover {
+	background: #312782;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Efecto click */
+.btn-protocolo:active {
+	transform: scale(0.97);
 }
 
 .toggle-arrow {
